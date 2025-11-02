@@ -62,3 +62,5 @@ git clone https://github.com/YOURUSERNAME/user-auth-api.git
 cd user-auth-api
 
 
+## Installation and Setup
+npm install
