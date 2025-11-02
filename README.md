@@ -41,7 +41,7 @@ A minimal frontend folder is included for testing and integration.
 - **frontend/**
   - Placeholder for future React frontend integration  
 - **index.js** → Main server entry point  
-- **.env** → Environment variables  
+- **.gitignore** → Ignores node_modules/ and .env files  
 - **package.json** → Project dependencies  
 
 ---
