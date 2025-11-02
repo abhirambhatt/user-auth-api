@@ -56,11 +56,65 @@ PORT=5000
 
 ## Installation and Setup
 
-### 1. Clone the Repository
-```bash
+## 1. Clone the Repository
 git clone https://github.com/YOURUSERNAME/user-auth-api.git
 cd user-auth-api
 
-
-## Installation and Setup
+## 2. Install Dependencies
 npm install
+
+## 3. Run the Server
+### For development:
+npm run dev
+
+## For production:
+npm start
+
+## Server will start on:
+http://localhost:5000
+
+## API Endpoints
+### Register User
+#### POST /api/auth/register
+
+Request body:
+{
+  "username": "abhiram",
+  "email": "abhi@example.com",
+  "password": "123456"
+}
+
+Response:
+{
+  "message": "User registered successfully"
+}
+
+### Login User
+#### POST /api/auth/login
+
+Request body:
+{
+  "email": "abhi@example.com",
+  "password": "123456"
+}
+
+Response:
+{
+  "message": "Login successful",
+  "token": "your_jwt_token"
+}
+
+## Development Notes
+
+-Passwords are securely hashed using bcrypt before saving.
+-JWT tokens are generated for authentication and must be sent in headers for protected routes.
+-Code is modularized using controllers and middlewares for scalability.
+
+## License
+This project is licensed under the MIT License.
+
+## Author
+### Abhiram Bhatt
+GitHub: https://github.com/abhirambhatt
+
+---
