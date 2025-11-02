@@ -106,9 +106,9 @@ Response:
 
 ## Development Notes
 
-**Passwords are securely hashed using bcrypt before saving.**
-**JWT tokens are generated for authentication and must be sent in headers for protected routes.**
-**Code is modularized using controllers and middlewares for scalability.**
+- Passwords are securely hashed using bcrypt before saving.
+- JWT tokens are generated for authentication and must be sent in headers for protected routes.
+- Code is modularized using controllers and middlewares for scalability.
 
 ## License
 This project is licensed under the MIT License.
