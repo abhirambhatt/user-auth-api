@@ -27,18 +27,19 @@ Includes user registration, login, password hashing with bcrypt, and file upload
 ---
 
 ## Project Structure
-user-auth-api/
-├── models/
-│ └── User.js
-├── routes/
-│ └── authRoutes.js
-├── middleware/
-│ └── authMiddleware.js
-├── config/
-│ └── firebase.js
-├── index.js
-├── package.json
-└── README.md
+### Folder & File Overview
+- **models/**
+  - `User.js` → Defines user schema and model
+- **routes/**
+  - `authRoutes.js` → Handles authentication routes
+- **middleware/**
+  - `authMiddleware.js` → JWT and authorization checks
+- **config/**
+  - `firebase.js` → Firebase configuration for storage
+- **index.js** → Main server file
+- **package.json** → Project dependencies and scripts
+- **README.md** → Documentation
+
 
 
 ---
