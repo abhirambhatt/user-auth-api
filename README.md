@@ -57,7 +57,7 @@ PORT=5000
 ## Installation and Setup
 
 ## 1. Clone the Repository
-git clone https://github.com/YOURUSERNAME/user-auth-api.git
+git clone https://github.com/abhirambhatt/user-auth-api.git
 cd user-auth-api
 
 ## 2. Install Dependencies
