@@ -46,14 +46,6 @@ A minimal frontend folder is included for testing and integration.
 
 ---
 
-## Environment Variables
-Create a `.env` file in the root directory:
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-PORT=5000
-
----
-
 ## Installation and Setup
 
 ## 1. Clone the Repository
