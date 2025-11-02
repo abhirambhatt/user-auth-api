@@ -1,52 +1,64 @@
 # User Authentication API
 
-A secure and scalable User Authentication & Management API built with Node.js, Express, MongoDB, and JWT Authentication.  
-Includes user registration, login, password hashing with bcrypt, and file uploads using Firebase Storage.
+A clean and modular user authentication API built with Node.js, Express, MongoDB, and JWT.  
+Implements registration and login functionality with encrypted passwords, authentication middleware, and controller-based architecture.  
+A minimal frontend folder is included for testing and integration.
 
 ---
 
 ## Features
-- User registration and login with JWT authentication
-- Password encryption using bcrypt
-- Middleware for authentication and error handling
-- File upload with Firebase Storage
-- CRUD APIs following REST architecture
-- Mongoose models for database management
-- Tested using Postman or Thunder Client
+- User registration and login with JWT authentication  
+- Password hashing using bcrypt  
+- Middleware-based route protection  
+- Controller-based clean code structure  
+- MongoDB integration using Mongoose  
+- Environment variables using dotenv  
+- CORS enabled for frontend access  
 
 ---
 
 ## Tech Stack
 **Backend:** Node.js, Express.js  
-**Database:** MongoDB, Mongoose  
+**Database:** MongoDB (Mongoose ODM)  
 **Authentication:** JWT, bcrypt  
-**File Storage:** Firebase Storage  
-**API Testing:** Postman / Thunder Client  
-**Version Control:** Git and GitHub  
+**Environment Management:** dotenv  
+**Frontend (Basic):** React (optional integration)  
 
 ---
 
 ## Project Structure
-### Folder & File Overview
-- **models/**
-  - `User.js` → Defines user schema and model
-- **routes/**
-  - `authRoutes.js` → Handles authentication routes
-- **middleware/**
-  - `authMiddleware.js` → JWT and authorization checks
+### Folder Overview
 - **config/**
-  - `firebase.js` → Firebase configuration for storage
-- **index.js** → Main server file
-- **package.json** → Project dependencies and scripts
-- **README.md** → Documentation
+  - `db.js` → Handles MongoDB connection setup  
+- **controllers/**
+  - `authController.js` → Logic for registration and login  
+- **middlewares/**
+  - `authMiddleware.js` → JWT token verification middleware  
+- **models/**
+  - `User.js` → Mongoose user schema and model  
+- **routes/**
+  - `authRoutes.js` → Authentication routes (register, login)  
+- **frontend/**
+  - Placeholder for future React frontend integration  
+- **index.js** → Main server entry point  
+- **.env** → Environment variables  
+- **package.json** → Project dependencies  
 
+---
 
+## Environment Variables
+Create a `.env` file in the root directory:
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
 
 ---
 
 ## Installation and Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/abhirambhatt/user-auth-api.git
+git clone https://github.com/YOURUSERNAME/user-auth-api.git
 cd user-auth-api
+
+
